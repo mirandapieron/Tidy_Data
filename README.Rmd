@@ -1,0 +1,35 @@
+ReadMe - run_analysis.R
+========================================================
+
+This script was written to create two tidy data sets from the UCI HAR Dataset.
+This dataset is downloadable from:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Important: in order to use the script, the "UCI HAR Dataset" folder should be in the same folder as the run_analysis.R file, and should not be renamed. The folder containing the script and the dataset should be your working directory.
+
+The function consists of two parts, both executed when running run_analysis().
+
+PART 1:
+
+This part of the function merges the 'training' and the 'test' sets of the UCI HAR Dataset into one tidy dataset, containing as only the mean and standard deviation for each measurement as variables.
+
+By running run_analysis():
+1) a dataframe tidy_data (dim: 10299 obs. of 82 variables) is stored in your R environment,
+2) the dataframe is also stored in your working directory as "tidy_data.csv" and "tidy_data.txt".
+
+PART 2:
+
+This part of the function builds on the tidy_data, and creates a tidy dataset containing the average of each variable (column) for each activity and each subject.
+This results in 30 subjects * 6 activities = 180 averages (rows) per variable.
+
+By running run_analysis():
+1) a dataframe tidy_data_avg (dim: 180 obs. of 83 variables) is stored in your R environment,
+2) the dataframe is also stored in your working directory as "tidy_data_avg.csv" and "tidy_data_avg.txt".
+
+
+CODE BOOK
+A code book ("tidy_data_codebook.md"), explaining the structure of tidy_data and tidy_data_avg, is provided with the script.
+
+----
+
+I've done my best; feedback is very welcome :-)

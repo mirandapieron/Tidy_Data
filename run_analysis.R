@@ -95,7 +95,7 @@ run_analysis<-function(){
   
   ## 4) for clarity/convenience, add separate 'subject' and 'activity' columns to df.
   subject<-rep(1:30,each=6)
-  activity<-rep(levels(tidy_data$activity),30)
+  activity<-rep(order(levels(tidy_data$activity)),30)
   df_tidy<-cbind(subject=subject,activity=activity,df)
   names(df_tidy)[4:82]<-names(tidy_data)[4:82]
  
