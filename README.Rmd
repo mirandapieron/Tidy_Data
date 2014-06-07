@@ -28,12 +28,12 @@ the average of each variable (column) for each activity and each subject.
 This results in 30 subjects * 6 activities = 180 averages (rows) per variable.
 
 By running run_analysis():
-1) a dataframe tidy_data_avg (dim: 180 obs. of 83 variables) is stored in your R environment,
+1) a dataframe tidy_data_avg (dim: 180 obs. of 82 variables) is stored in your R environment,
 2) the dataframe is also stored in your working directory as "tidy_data_avg.csv" and "tidy_data_avg.txt".
 
 
 CODE BOOK
-A code book ("tidy_data_codebook.md"), explaining the structure of tidy_data and tidy_data_avg, 
+A code book ("tidy_data_codebook.Rmd"), explaining the structure of tidy_data and tidy_data_avg, 
 is provided with the script.
 
 ----
