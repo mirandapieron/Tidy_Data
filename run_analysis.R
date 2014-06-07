@@ -60,6 +60,7 @@ run_analysis<-function(){
   
   ## Write tidy_data to csv
   write.csv(tidy_data,"tidy_data.csv",row.names=F)
+  write.table(tidy_data,"tidy_data.txt",row.names=F)
   
   
   
@@ -102,5 +103,6 @@ run_analysis<-function(){
   
   ## 5) save to csv :-)
   write.csv(tidy_data_avg,"tidy_data_avg.csv",row.names=F)
+  write.table(tidy_data_avg,"tidy_data_avg.txt",row.names=F)
 
 }
